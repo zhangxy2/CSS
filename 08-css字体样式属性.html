@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box1 {
+            font-style: italic;
+            font-weight: 700;
+            font-size: 30px;
+            /*font-family: "微软雅黑","黑体";*/
+            font-family: "楷体";
+        }
+
+        .box2 {
+            font : oblique 700 30px/30px '宋体';
+        }
+    </style>
+</head>
+<body>
+<!--
+font-style 设置字体是否倾斜
+normal italic斜体 字体需要支持斜体  oblique 倾斜
+
+font-weight normal bold bolder lighter
+100-900      400    700
+
+font-size
+
+font-family  字体
+支持多个字体，逗号隔开，第一个不支持，就第二个，
+中文字体加引号 英文可以不用
+英文字体 有特殊符号# $ 空格 需要加引号
+若中文英文字体不同 需要将英文字体写在前面 因为 英文只对英文有效 中文对中文英文都有效
+
+font 综合设置 顺序不能改变  不能不写size family、
+line-height 行高 一般设置和元素一样 解决垂直居中问题
+-->
+
+<div class="box1">字体样式设置</div>
+<div class="box2">字体综合设置设置</div>
+</body>
+</html>

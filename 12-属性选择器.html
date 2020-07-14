@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*  div[class="box"] {
+              !*等于box*!
+              background-color: #f35;
+          }*/
+
+        /*    div[class*="box"] {
+                !*有box就行*!
+                background-color:#f90;
+            }*/
+
+        /*   div[class^="box"] {
+               !*以box开头*!
+               background-color: #f90;
+           }*/
+
+       /* div[class$="box"] {
+            !*以box结尾*!
+            background-color: #f90;
+        }*/
+
+        /*div[class] {
+            !*有class属性*!
+            background-color: #f90;
+        }*/
+
+       /* div[id][class^="box"] {
+            !*并集*!
+            background-color: #f90;
+        }*/
+
+        div[class~=box] {
+            /*包阔box  有空格*/
+            background-color: #f90;
+        }
+
+        div[class|=box] {
+            /*包阔box  后面有—*/
+            background-color: #f10;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="boxaaa">2</div>
+<div class="aaabox">3</div>
+<div class="box aaa">4</div>
+<div class="aaa box">5</div>
+<div class="box-ss">6</div>
+<div class="sss-box">7</div>
+<div class="box333" id="bbb">8</div>
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: #f09;
+            border: 4px dashed #09f;
+            border-radius: 10px 20px 40px;
+            padding: 10px 20px 30px 40px;
+            margin: 10px 20px 30px 40px;
+
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #f44;
+            margin-bottom: 100px;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #09f;
+            margin-top: 200px;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #f44;
+            /*border: 10px solid 090;*/
+            /*padding: 10px;*/
+            overflow: hidden;
+        }
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            background-color: #009;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+盒子模型
+border  改变盒子大小
+border-weight 边框宽度 上右下左
+border-style ： none/solid/double/dashed/dotted
+border-color 上右下左
+连写 border ： 1px solid red；
+border-radius ： 上右下左
+
+
+padding 改变大小
+上右下左
+padding-top bottom left right
+
+margin
+上右下左
+
+问题1：
+外边距合并 ： 两个相邻的块级元素，都有外边距，上边的下外边距 下变得上外边距 在一起时不是和 而是 取值大的
+解决办法 ： 只设置一个外边距
+
+问题2 ：
+外边距传递 ： 两个嵌套关系的元素，副元素没有设置上外边框 上内边距，当子元素有上外边距时传递给父元素
+解决办法 ： border/padding  改变了盒子大小
+           给父元素设置overflow： hidden；
+-->
+
+
+
+<!--<div class="box">222222</div>-->
+
+
+<!--<div class="box1">1</div>
+<div class="box2">2</div>-->
+
+<div class="box3">
+    <div class="box4">88888</div>
+</div>
+
+
+</body>
+</html>

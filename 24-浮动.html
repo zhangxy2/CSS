@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box1 {
+            width: 400px;
+            height: 300px;
+            background-color: #09f;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #f94;
+            float: right;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: #690;
+        }
+
+
+        .box4 {
+            width: 100px;
+            height: 100px;
+            /*display: inline-block;*/
+            background-color: #f00;
+            /*float: right;*/
+        }
+
+
+        .w{
+            background-color: #f63;
+            /*overflow: hidden;*/
+        }
+
+        .b1 {
+            width: 100px;
+            height: 100px;
+            background-color: #090;
+            float: left;
+
+        }
+        .b2 {
+            width: 140px;
+            height: 140px;
+            background-color: #009;
+            float: right;
+        }
+        .clearfix::before,
+        .clearfix::after {
+            content: '.';
+            clear: both;
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom : 1;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="box1">
+    <div class="box4">4</div>
+
+    <div class="box2">2</div>
+    <p>
+        In computing, the default is a particular set of instructions which
+        the computer always uses unless the person using the computer gives other.
+        默认选项通常是大多数用户都会选择的设置。
+    </p>
+    <div class="box3">3</div>
+</div>-->
+
+<div class="w  clearfix">
+    <div class="b1">11</div>
+<!--    <div style="clear: both"></div>-->
+    <div class="b2">22</div>
+</div>
+
+
+<!--
+css定位的三种机制 ： 标准流 浮动 定位
+
+标准流 ： 字一个网页内 元素正常从上到下 从左至右 排列
+
+浮动属性：
+元素通过float属性 定义浮动
+选择器 {
+    float: left/right
+}
+
+浮动特性 ：
+浮动的元素，具有行内块元素的特性
+浮动的元素先找到父元素对其，但是不会超过内边距
+浮动元素脱标，不占空间，左右浮动，但影响标准流布局
+
+浮动元素排列顺序：
+顶端对其
+不会和行内级元素层叠
+
+和上一个元素有关
+上一个块级 标准流 下一行显示 浮动 一行显示
+行内块 先父元素对其 在在一行显示
+文本 本行左右浮动 文字环绕
+下一行文本 文字环绕
+
+清除浮动：
+浮动的影响：父级元素因为子元素浮动 高度为0
+额外标签法 增加无意义标签
+父级overflow 内容过多 会隐藏元素
+伪元素 *zoom：1 ie6低版本不支持
+
+-->
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            background-color: #f33;
+        }
+        
+        span {
+            /*padding 垂直方向 显示但不占空间*/
+            padding: 10px 10px;
+            /*垂直方向 margin 不显示 无效*/
+            margin: 10px 12px;
+            background-color: #009;
+        }
+        img {
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+<!--
+标签分为 块级标签 行内标签  或者可以称为 块级元素 行内元素
+
+块级元素 ： 独占一行 可以设置宽高 对齐方式
+常见块级元素： 和h1-h6  p div ul ol li
+特点 ：
+独占一行
+可以设置宽高 padding margin
+宽度默认为浏览器百分百
+可以包括 内联元素 其他块级元素
+
+行内元素 ： 不独占一行 和相邻元素在一行显示 不能设置宽高对齐方式 默认宽度时自身内容
+常见 ： span a 格式化标签
+特点 ：
+不独占一行 和相邻元素在一行显示
+宽高无效 水平方向的padding margin可以设置 垂直方向无效
+默认宽度 是自身宽度
+可以包括 文本 和 其他行内元素 a标签特殊 链接里面不能套链接
+段落由文本组成  p h1-h6 都是文本类块级元素 不能套其他块级元素
+
+行内块元素
+img input td
+不独占一行 和其他相邻元素在一行  但是中间有个空白间隙
+可以设置 宽高 内外间距
+默认宽度 自身内容
+
+标签显示模式转换
+display ： none/inline/block/inline-block
+-->
+
+<div class="box1">块级标签</div>
+<span>行内元素</span>
+<img src="./img/jennie3.jpg" alt="">
+<div class="box2">哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</div>
+
+</body>
+</html>

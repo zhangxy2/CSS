@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w {
+            perspective: 200px;
+        }
+        .box {
+            margin: 40px auto;
+            width: 120px;
+            height: 120px;
+            background-color: #f54;
+            /*transform: rotateX(60deg) ;*/
+            /*transform: rotateX(45deg) rotateY(45deg);*/
+            transition: all 1s linear 0s;
+            backface-visibility: hidden;
+        }
+        .box:hover {
+            transform: translateZ(100px) rotateX(360deg);
+        }
+    </style>
+</head>
+<body>
+<div class="w">
+    <div class="box">444444</div>
+
+</div>
+
+<!--
+3d形变
+
+左手坐标系
+x正半轴  水平向右
+y正半周  垂直向下
+z       向外
+
+perspective 透视
+就近原则
+视距 ： 视点到屏幕的距离
+视点 ： 模仿透视时我们的眼睛
+perspective属性为参照 =200 值越接近200  越大
+
+如、rotateX/Y/Z translateX/Y/Z
+
+backface-visibility 元素背朝屏幕时 是否显示
+
+animation
+
+-->
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w {
+            width: 100px;
+            height: 100px;
+            background-color: #09f;
+            /*word-break: break-all;*/
+            /*word-break: keep-all;*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <!--    ssssssssssssssssssssssssssssss-sssssssss-->
+        文字的显示与隐藏
+        word-break 自动换行
+        normal
+        break-all 单词内可以换行
+        keep-all 只有连字符 半角空格可以换行
+
+        white-space 强制在同一行显示
+        normal
+        nowrap
+
+        text-overflow 是否用标记符号 标示隐藏了内容
+        clip 直接剪切
+        ellipse  省略
+        必须和 在一行显示white-space  一起食用
+
+    </div>
+
+
+
+<!--
+文字的显示与隐藏
+word-break 自动换行
+normal
+break-all 单词内可以换行
+keep-all 只有连字符 半角空格可以换行
+
+white-space 强制在同一行显示
+normal
+nowrap
+
+text-overflow 是否用标记符号 标示隐藏了内容
+clip 直接剪切
+ellipse  省略
+必须和 在一行显示white-space overflow:hidden 一起食用
+-->
+</body>
+</html>

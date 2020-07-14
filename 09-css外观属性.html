@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            /*background-color: red;*/
+            /*background-color: #f00;*/
+            /*background-color: rgb(255,0,0);*/
+            background-color: rgba(255,0,0,.6);
+            /*background-color: transparent;*/
+            /*opacity: .2;*/
+        }
+
+        .p {
+            background-color: #f94;
+            width: 300px;
+        }
+
+        .p1 {
+            line-height: 50px;
+            text-indent: 2em;
+            /*text-align: left;*/
+            /*text-align: right;*/
+            /*text-align: center;*/
+            /*text-align: justify;*/
+            text-align-last: justify;
+
+        /*    文字阴影*/
+            text-shadow: 5px 5px 1px #009;
+        }
+
+
+        .box2 {
+            letter-spacing: 30px;
+        }
+        .box3 {
+            letter-spacing: 30px;
+        }
+        .box4 {
+            word-spacing: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--
+颜色
+英文
+十六进制
+rgb
+rgba
+transparent 完全透明
+opacity 不透明度 继承性强 即使自己设置 也继承 0.9  0可以省略
+-->
+<div class="box1">哈哈哈哈哈</div>
+<!--
+行间距 ： 两行文字间基线的距离
+一般设置和元素一样搞 解决垂直剧中问题
+-->
+<p class="p p1">
+    冲绳县副知事谢花喜一郎表示，该县已经要求出现多名感染者的普天间和汉森营两处美军基地进行封锁，
+    并要求该基地将防疫等级提高至最高级别。
+    据《朝日新闻》报道，从7月初开始，美军普天间和汉森营两处基地接连出现相关人士确诊感染新冠肺炎的消息。
+    但就在这种情况下，这些基地里的美军士兵还在7月4日美国独立日纪念日时离开基地，。
+</p>
+<p class="p p2">
+    冲绳县副知事谢花喜一郎表示，该县已经要求出现多名感染者的普天间和汉森营两处美军基地进行封锁，
+    并要求该基地将防疫等级提高至最高级别。
+    据《朝日新闻》报道，从7月初开始，美军普天间和汉森营两处基地接连出现相关人士确诊感染新冠肺炎的消息。
+    但就在这种情况下，这些基地里的美军士兵还在7月4日美国独立日纪念日时离开基地，在外开派对庆祝。
+</p>
+
+<!--
+字间距  汉字  字母 letter-spacing
+单词间距  英文 word-spacing
+-->
+<div class="box2">并要求该基地将防疫等级提高至最高级别。</div>
+<div class="box3">hello word my name is rose</div>
+<div class="box4">hello word my name is rose</div>
+
+<!--
+首航缩进 text-indent  单位一般用em 大小为一个字的大小
+-->
+
+<!--
+对齐方式 text-align
+left right center
+justify  对最后一行无效
+text-align-last : justify
+-->
+
+<!--
+文字阴影 text-shadow 水平向右 垂直向下 模糊程度 阴影颜色
+-->
+</body>
+</html>
+
+
+
+
+
+

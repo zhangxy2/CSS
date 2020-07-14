@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #09f;
+            /*box-shadow: 6px 6px 6px 6px #090 inset;*/
+            /*box-shadow: 6px 6px 6px #090,*/
+            /*             -6px 0 6px #090;*/
+
+            /*box-shadow: 6px 6px 6px #090,*/
+            /*-6px 6px 6px #090;*/
+
+        /*    利用模糊程度 延伸距离 半透明 实现视觉上 阴影*/
+            box-shadow: 0 6px 8px 8px rgba(0,0,0,.6);
+        }
+    </style>
+</head>
+<body>
+<!--
+盒子阴影 ：
+box-shadow ： 水平向右 垂直向下 模糊程度 延伸距离 阴影颜色 内外阴影
+默认 外阴影outset   内阴影 inset
+-->
+
+<!--
+多阴影逗号链接
+-->
+
+<div class="box">111</div>
+
+</body>
+</html>

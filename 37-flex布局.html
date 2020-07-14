@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w {
+            height: 120px;
+            background-color: #999;
+            /*父元素开启弹性布局*/
+            display: flex;
+        }
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            /*flex: 1;*/
+            background-color: #f74;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            flex: 1;
+            background-color: #09f;
+        }
+        .box3 {
+            width: 100px;
+            height: 100px;
+            /*flex: 1;*/
+            background-color: #090;
+        }
+
+    /*    ------------------------------------------*/
+        .w2 {
+            width: 300px;
+            height: 300px;
+            background-color: #adc879;
+            display: flex;
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: row;*/
+            /*flex-direction: column-reverse;*/
+            /*flex-direction: column;*/
+            /*flex-wrap: wrap;*/
+            /*justify-content: flex-end;*/
+            /*justify-content: space-between;*/
+
+            /*flex-wrap: nowrap;*/
+            /*flex-wrap: wrap-reverse;*/
+
+            /*flex-flow: row wrap;*/
+
+            /*align-items: flex-start;*/
+            /*align-items: center;*/
+            /*align-items: flex-end;*/
+            /*align-items: stretch;*/
+
+            /*align-content: flex-end;*/
+            /*align-content: space-between;*/
+            /*align-content: space-around;*/
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #a03;
+            border: 1px solid #666;
+        }
+
+        .box:nth-child(3) {
+            align-self: center;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="w2">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+</div>
+
+<!----------------------------------------------------->
+<div class="w">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+</body>
+</html>

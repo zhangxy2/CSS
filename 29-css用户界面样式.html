@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w {
+            width: 100px;
+            height: 100px;
+            background-color: #09f;
+            /*cursor: pointer;*/
+            /*cursor: move;*/
+            /*cursor:text;*/
+            /*cursor:none;*/
+            cursor:default;
+        }
+        .inp1 {
+            outline: 2px solid red;
+        }
+        
+        textarea {
+            /*resize: both;*/
+            /*resize: none;*/
+            /*resize: horizontal;*/
+            resize: vertical;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="w">哈哈哈</div>
+<input type="text" class="inp1">
+<textarea>多行文本域</textarea>
+<!--
+cursor ：none/pointer/hand/move/text/default
+
+resize ： none/both/vertical/horizontal
+
+outline ： 和border使用的方法类似
+outline-width
+outline-style
+outline-color
+
+可以用outline ： none 去掉外边框
+-->
+</body>
+</html>

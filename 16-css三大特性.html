@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: #f94;
+            font-size: 30px;
+            text-shadow: 3px 3px 2px #000;
+            text-align: right;
+            color: #690;
+        }
+
+        a {
+            color: inherit;
+        }
+        
+        div{
+            background-color: #09f !important;
+        }
+        .box4{
+            background-color: #690;
+        }
+        #bbb {
+            background-color: #037;
+        }
+        
+
+    </style>
+</head>
+<body>
+<!--
+继承性 子元素继承父元素的某种属性
+可以继承 text- font- line- 颜色
+a标签不能继承 color
+强制继承 inherit
+-->
+<div class="box">
+    <div class="box2">
+        <a href="#">hhhhhh</a>
+    </div>
+</div>
+
+
+<!--
+层叠性
+一个属性 两个相同的选择器 设置一个元素上 一个会被另一个层叠掉
+
+相同样式 ： 就近原则
+不同样式 ： 保留
+
+权重
+！important
+内联样式
+id选择器
+class类选择器 属性选择器 伪类选择器
+元素选择器 伪元素选择器
+继承来的 权重最低
+
+相同权重就近原则
+-->
+
+<div class="box3">
+    <div class="box4" id="bbb" style="background-color:#f00;">aaaaaaaaa</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

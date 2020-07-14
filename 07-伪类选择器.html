@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       /* a:link {
+            background-color: red;
+        }
+        a:visited {
+            background-color: green;
+        }
+        a:focus {
+            background-color: pink;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+        a:active {
+            background-color: blue;
+        }
+        a {
+            outline: none;
+        }*/
+        
+        li:first-child {
+            background-color: #f00;
+        }
+        li:last-child {
+            background-color: #00f;
+        }
+        li:nth-child(3) {
+            background-color: #690;
+        }
+        li:nth-last-child(3) {
+            background-color: #369;
+        }
+        
+        :target {
+            /*前面没有元素时，被激活的锚点时更改样式  有元素相当于交集选择器*/
+            background-color: #f44;
+            color: #009900;
+            font-size: 60px;
+            font-style: italic;
+        }
+
+        .p {
+            height: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+链接伪类
+结构伪类
+目标伪类
+-->
+<!--去掉a标签 input 聚焦状态 两种方法 去掉外轮阔 但是还能选择 改变键盘tab选择元素的顺序 tabindex=-1-->
+<a href="http://www.baidu.com">baidu</a>
+<input type="text" tabindex="-1">
+
+<ul>
+    <span>span</span>
+    <li>1</li>
+    <li>2</li>
+    <div>div</div>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<a href="#p1">1</a>
+<a href="#p2">2</a>
+<a href="#p3">3</a>
+
+<div class='p' id="p1">1</div>
+<div class='p' id="p2">2</div>
+<div class='p' id="p3">3</div>
+
+
+</body>
+</html>

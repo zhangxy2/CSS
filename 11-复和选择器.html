@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box1,
+        .box2 {
+            background-color: #f44;
+        }
+
+        div.box2 {
+            border: 3px solid #990;
+        }
+        
+        .box3 > .box4 {
+            height: 100px;
+            background-color: #009;
+        } 
+        
+        .box3 .box5 {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+<!--
+并集选择器 逗号隔开
+
+交集选择器 第一个是标签选择器 第二个是类选择器
+
+子代选择器 > 亲儿子
+
+后代选择器 孙子
+-->
+
+<div class="box1">1</div>
+<div class="box2">2</div>
+<div class="box3">
+    <div class="box4">
+        <div class="box5">66666</div>
+    </div>
+</div>
+
+</body>
+</html>

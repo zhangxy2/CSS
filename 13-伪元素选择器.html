@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1 {
+            width: 300px;
+            background-color: #999;
+        }
+        
+        .box1::first-letter {
+            font-size: 30px;
+            font-style: italic;
+            color: #f94;
+        }
+        
+        .box1::first-line {
+            background-color: #690;
+        }
+        
+        .box1::selection {
+            background-color: #09f;
+        }
+
+        .box1::before {
+            content:'开头';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #090;
+        }
+
+        .box1::after {
+            content:'结尾';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: #090;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+::first-letter
+::first-line
+::selection
+::before
+::after 在元素开头或结尾创建元素  行内元素  必须和 content一起用
+-->
+<div class="box1">
+    数据显示，社保基金拟减持中国人保(7.640, -0.61, -7.39%)股份不超过2%，
+    且此次减持计划属于社保基金会的常规性投资业务安排。历史资料显示，
+    中国人保早在2011年6月引入社保基金作为战略投资者，在近期中国人保股价大幅上涨之后，
+    社保基金减持股份也被视作为市场降温的信号之一。
+    与此同时，作为大基金的国家集成电路产业投资基金拟对北斗星通(37.400, -1.86, -4.74%)、
+    汇顶科技(259.470, -10.44, -3.87%)以及太极实业(13.350, -0.61, -4.37%)进行减持，减持幅度在1%至2%之间。
+</div>
+</body>
+</html>

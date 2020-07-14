@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body {
+            height: 2000px;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: #090;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #f95;
+            background-image: url(./img/jennie1.jpg);
+            background-repeat: no-repeat;
+            bgckground-position: right bottom;
+            background-attachment: fixed;
+            background-size: 100px 100px;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background: url(./img/jennie1.jpg) no-repeat left top/100px 100px scroll,
+                        url(./img/jennie2.jpg) no-repeat right top/100px 100px scroll,
+                        url(./img/jennie3.jpg) no-repeat left bottom/100px 100px scroll,
+                        url(./img/jennie1.jpg) no-repeat right top/100px 100px scroll blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box"></div>
+</div>
+
+<div class="box3">
+</div>
+
+
+<!--
+background-color
+red/十六进制/rgb（）/rgba/transparent
+
+background-image 背景图片
+
+background-repeat 是否平铺
+repeat/no-repeat/repeat-x/repeat-y
+
+background-position 背景图片位置
+具体数字 20px 20px / left right center top bottom center
+
+background-attachment 背景图片随对象 滚动 固定
+scroll fixed
+
+background-size 背景缩放
+具体大小  cover 保证盒子 contain 保证图片
+
+连写 ： background ： 图片 平铺  位值/大小 颜色
+
+多背景图片
+逗号分割
+多个背景图片交集 前面的盖住后面的
+颜色写在在后面  防止颜色 盖住图片
+-->
+
+
+</body>
+</html>

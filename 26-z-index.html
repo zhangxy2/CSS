@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .b {
+            width: 100px;
+            height: 100px;
+        }
+        .b1 {
+            background-color: #f0f;
+            position: absolute;
+            left: 100px;
+            z-index: 999;
+        }
+        .b2 {
+            background-color: #ff0;
+            position: absolute;
+            left: 150px;
+
+        }
+        .b3 {
+            background-color: #00f;
+            position: absolute;
+            left: 200px;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+<div class="b b1">1</div>
+<div class="b b2">2</div>
+<div class="b b3">3</div>
+
+<!--
+叠放次序 ：
+脱标元素 推叠在一起
+z-index 可以调整堆叠顺序
+0 是默认  值越大 在上面  负数 0 正数
+数一样是 后来者居上
+没有单位
+只有相对定位 绝对定位 固定定位 有z-index属性
+
+-->
+</body>
+</html>

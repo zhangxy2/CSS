@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        * {
+            /*通配符选择器*/
+            color: red;
+        }
+         div {
+             /*标签选择器*/
+             border: 3px solid #090
+         }
+
+        .box1 {
+            /*类选择器*/
+            background-color: #f09;
+        }
+
+        #box2 {
+        /*    ID选择器*/
+            background-color: #ff0;
+        }
+
+        .box1,
+        .box3 {
+            /*并集*/
+            border-radius: 10px;
+        }
+
+        div.box1 {
+            /*交集*/
+            text-shadow: 6px 6px 2px #000000;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<!--
+通配符选择器 ： *
+标签选择器（元素选择器）
+类选择器
+id选择器
+并集选择器
+交集选择器
+多类名选择器
+-->
+
+<div class="box1">类名</div>
+<div id="box2">id</div>
+<div class="box3">hhhh</div>
+</body>
+</html>

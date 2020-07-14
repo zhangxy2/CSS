@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .w {
+            width: 340px;
+            height: 230px;
+            background-color: #ff5;
+        }
+
+      .b {
+          width: 100px;
+          height: 100px;
+          background-color: #f94;
+          float: left;
+          border: 10px solid #090;
+          margin-left: -10px;
+          margin-bottom: -10px;
+      }
+        
+        .b:nth-child(3) {
+            height: 210px;
+            background-color: #009;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div class="w">
+    <div class="w2">
+            <div class="b">1</div>
+            <div class="b">2</div>
+            <div class="b">3</div>
+            <div class="b">4</div>
+            <div class="b">5</div>
+    </div>
+</div>
+
+
+<!--
+width = margin + padding + content
+当 margin为负数时 content = width + margin
+所以 负的margin 会使 content 变大
+-->
+
+
+</body>
+</html>

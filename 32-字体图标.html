@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family : 'test';
+            src: url("./font/iconfont.svg"),
+            url("./font/iconfont.eot"),
+            url("./font/iconfont.woff"),
+            url("./font/iconfont.woff2");
+        }
+        span {
+            font-family: 'test';
+        }
+
+        .box::before {
+            content: "\e87f";
+        }
+    </style>
+</head>
+<body>
+<!--<span>&#xe87f;</span>-->
+<span class="box"></span>
+</body>
+</html>
